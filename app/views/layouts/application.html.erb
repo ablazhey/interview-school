@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>School</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+</head>
 
-  <body>
+<body>
     <%= link_to 'Classes', subjects_path %>
     <%= link_to 'Teachers', teachers_path %>
+    <%= link_to 'Students', students_path %>
+    <%= link_to 'Class Rooms', class_rooms_path %>
+    <%= link_to 'Sections', sections_path %>
+    <%= link_to 'Schedules', schedules_path %>
+
+
+
     <br>
     <%= yield %>
-  </body>
+</body>
+
 </html>
